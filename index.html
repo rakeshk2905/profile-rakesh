@@ -6,9 +6,33 @@
     <title>Home</title>
 
     <style>
-        #header{
+        .header{
             color: rgb(252, 252, 0);
-            background-color: rgb(131, 54, 131)
+            background-color: rgb(131, 54, 131);
+            margin-left: 10px;
+        }
+
+        header span{
+            margin-right: 40px;
+        }
+
+        nav a{
+            /* border: 3px solid red; */
+            margin-right: 40px;
+            text-decoration: none;
+            box-sizing: border-box;  
+            border: 2px solid ;
+            padding: 2px;
+           background-color: gold;
+        }
+
+        #homeLink{
+            margin-left: 10px;
+        }
+
+        footer a{
+            margin-right: 40px;
+            margin-left: 10px;
         }
     </style>
 
@@ -16,16 +40,18 @@
 <body>
     <!-- Header Section -->
     <header>
-        <span id="header"> Name: Rakesh Kawade &nbsp;&nbsp;&nbsp;&nbsp; Mobile: 9518 72 2196 &nbsp;&nbsp;&nbsp;&nbsp; Email: abc@gmail.com</span>
+        <span class="header">
+            <span> Name: Rakesh Kawade</span> <span class="header">Mobile: 9518 72 2196</span> <span class="header">Email: abc@gmail.com</span>
+        </span>
     </header>
     <hr>
 
     <!-- Navigation Section -->
     <nav>
-        <a href="home.html" target="mainFrame">HOME</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="techStack.html" target="mainFrame">TECH STACK</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="project.html" target="mainFrame">PROJECT</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="education.html" target="mainFrame">EDUCATION</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="home.html" target="mainFrame" id="homeLink">HOME</a>
+        <a href="techStack.html" target="mainFrame">TECH STACK</a> 
+        <a href="project.html" target="mainFrame">PROJECT</a>
+        <a href="education.html" target="mainFrame">EDUCATION</a>
         <a href="others.html" target="mainFrame">OTHERS</a>
     </nav>
     <hr>
@@ -36,8 +62,8 @@
     <hr>
     <!-- Footer Section -->
     <footer>
-        <a href="https://in.linkedin.com/" target="_blank">Linked IN</a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/" target="_blank">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://in.linkedin.com/" target="_blank">Linked IN</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
         <a href="https://www.naukri.com/" target="_blank">Naukri</a>
         
     </footer>
