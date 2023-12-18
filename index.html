@@ -1,72 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
+    <!-- CDN Link - font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Icons Link -->
+    <!-- https://fontawesome.com/v4/icons/ -->
+
+    <!-- CDN Link - Google font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+
     <style>
-        .header{
-            color: rgb(252, 252, 0);
-            background-color: rgb(131, 54, 131);
-            margin-left: 10px;
+      .header {
+        color: rgb(252, 252, 0);
+        background-color: rgb(131, 54, 131);
+        margin-left: 10px;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      header span {
+        margin-right: 40px;
+        
+      }
+
+      header{
+        text-align: center;
+      }
+
+      nav a {
+        /* border: 3px solid red; */
+        margin-right: 40px;
+        text-decoration: none;
+        box-sizing: border-box;
+        border: 2px solid;
+        padding: 2px;
+        background-color: gold;
+        font-family: 'Concert One', sans-serif;
+        
+      }
+
+      #homeLink {
+        margin-left: 10px;
+      }
+
+      footer a {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      header img{
+        width: 20px;
+        height: 20px;
         }
 
-        header span{
-            margin-right: 40px;
-        }
-
-        nav a{
-            /* border: 3px solid red; */
-            margin-right: 40px;
-            text-decoration: none;
-            box-sizing: border-box;  
-            border: 2px solid ;
-            padding: 2px;
-           background-color: gold;
-        }
-
-        #homeLink{
-            margin-left: 10px;
-        }
-
-        footer a{
-            margin-right: 40px;
-            margin-left: 10px;
-        }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <span class="header">
-            <span> Name: Rakesh Kawade</span> <span class="header">Mobile: 9518 72 2196</span> <span class="header">Email: abc@gmail.com</span>
-        </span>
+        <img align="left" src="assests/RakeshLogo.png" alt="">
+      <span class="header">
+        <span>
+          <i class="fa fa-user" aria-hidden="true"></i> Rakesh Kawade</span
+        >
+        <span class="header"
+          ><i class="fa fa-phone" aria-hidden="true"></i> 9518 72 2196</span
+        >
+        <span class="header"
+          ><i class="fa fa-envelope" aria-hidden="true"></i> abc@gmail.com</span
+        >
+      </span>
     </header>
-    <hr>
+    <hr />
 
     <!-- Navigation Section -->
     <nav>
-        <a href="home.html" target="mainFrame" id="homeLink">HOME</a>
-        <a href="techStack.html" target="mainFrame">TECH STACK</a> 
-        <a href="project.html" target="mainFrame">PROJECT</a>
-        <a href="education.html" target="mainFrame">EDUCATION</a>
-        <a href="others.html" target="mainFrame">OTHERS</a>
+      <a href="home.html" target="mainFrame" id="homeLink">HOME</a>
+      <a href="techStack.html" target="mainFrame">TECH STACK</a>
+      <a href="project.html" target="mainFrame">PROJECT</a>
+      <a href="education.html" target="mainFrame">EDUCATION</a>
+      <a href="others.html" target="mainFrame">OTHERS</a>
     </nav>
-    <hr>
+    <hr />
 
     <!-- Body Section -->
-    <iframe src="home.html" name="mainFrame" frameborder="1" width="1200px" height="450px"></iframe>
-    
-    <hr>
+    <iframe
+      src="home.html"
+      name="mainFrame"
+      frameborder="1"
+      width="1200px"
+      height="500px"
+    ></iframe>
+
+    <hr />
     <!-- Footer Section -->
     <footer>
-        <a href="https://in.linkedin.com/" target="_blank">Linked IN</a>
-        <a href="https://github.com/" target="_blank">GitHub</a>
-        <a href="https://www.naukri.com/" target="_blank">Naukri</a>
-        
+      <a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+      <a href="https://www.naukri.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
     </footer>
-    
-</body>
+  </body>
 </html>
