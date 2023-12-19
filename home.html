@@ -25,17 +25,32 @@
         font-family: "Poppins", sans-serif;
       }
 
-      ul li {
-        list-style-type: circle;
-      }
-
       li {
         padding-bottom: 30px;
       }
 
       .list {
         font-family: "Roboto", sans-serif;
+        list-style-type: none;
       }
+
+      .list::before{
+        content: "👉";
+      }
+
+      .list::selection{
+        background-color: rgb(255, 0, 0);
+      }
+
+      body{
+        background-image: url(assests/home.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: fit-content;
+        height: fit-content;
+        color: white;
+      }
+
     </style>
   </head>
   <body>
